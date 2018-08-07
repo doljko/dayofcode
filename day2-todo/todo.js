@@ -19,8 +19,6 @@ var removeButton = document.getElementById('remove');
 removeButton.addEventListener('click',removeItem)
 
 
-
-
 function addItem() {
   var input = document.getElementById('input');
   var item = input.value;
@@ -45,13 +43,11 @@ function addItem() {
       label.setAttribute('for','item') //optional
 
           //add getElementById
-
           ul.appendChild(label);
           li.appendChild(checkbox);
           label.appendChild(textnode);
           li.appendChild(label);
           ul.insertBefore(li, ul.childNodes[0]);
-
         setTimeout(() => {
           li.className ='visual';
         }, 2);
@@ -59,7 +55,6 @@ function addItem() {
 
     }
 }
-
 
 
 function removeItem() {
