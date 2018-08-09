@@ -14,6 +14,8 @@ class User {
     const myname = newname.split(" ");
     this.firstname = myname[0];
     this.lastname = myname[1];
+
+    //take a midlle name  too
   }
 }
 const  john = new User("John","Anderson", 34);
